@@ -1,0 +1,175 @@
+<html>
+    <style>
+        @import "compass/css3";
+
+            *, :before, :after{ box-sizing: border-box; }
+
+            .unstyled{ 
+            list-style: none; padding: 0; margin: 0;
+            }
+            a{ 
+                text-decoration: none; 
+            }
+            .list-inline{ overflow: hidden;}
+            li{ float: left; }
+
+            .header{
+            position: fixed;
+            left: 0; top: 0; bottom: 0;
+            width: 14.5em;
+            background: #35302D;
+            }
+
+        
+  ul{
+    border-top: solid 1px #3C3735;
+  }
+  
+  li{
+    border-bottom: solid 1px #3C3735;
+  }
+  
+  a{
+    padding: 1.1em 0;
+    color: #DFDBD9;
+    font: 400 1.125em;
+    font-family: sans-serif;
+    
+}
+text:{
+      text-align: center;
+      transform: lowercase;
+    }
+
+
+ 
+li{
+    position: relative;
+    overflow: hidden;
+  }
+  a{
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: .35s ease color;
+    
+  }
+  a:before{
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      left: -100%; top: 0;
+      width: 100%; height: 100%;
+      border-right: solid 5px $orange;
+      background-color: #3C3735;
+      transition: .35s ease left;
+    }
+    a.is-current,
+    a:hover{
+      
+        left: 0;
+    }
+  
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    </style>
+</html>
+<body>
+  <body>
+
+    <h2>Grid of Boxes</h2>
+    <p>Float boxes side by side:</p>
+    
+    <div class="clearfix">
+      <div class="box" style="background-color:#bbb">
+      <p>NETWORTH</p><br>
+      </div>
+      <div class="box" style="background-color:#ccc">
+      <p><B>NETWORTH<BR>$8488</B></b></p>
+      </div>
+      <div class="box" style="background-color:#ddd">
+      <p><B>INVESTMENT</B><br>91.9</p>
+      </div>
+    </div>
+    
+    
+    </body>
+  <div class="home-content">
+    <div class="overview-boxes">
+      <div class="box">
+        <div class="right-side">
+          <div class="box-topic">Total Order</div>
+          <div class="number">#value</div>
+          <div class="indicator">
+            <i class='bx bx-up-arrow-alt'></i>
+            <span class="text">Up from yesterday</span>
+          </div>
+        </div>
+        <i class='bx bx-cart-alt cart'></i>
+      </div>
+      <div class="box">
+        <div class="right-side">
+          <div class="box-topic">Total Sales</div>
+          <div class="number">#value</div>
+          <div class="indicator">
+            <i class='bx bx-up-arrow-alt'></i>
+            <span class="text">Up from yesterday</span>
+          </div>
+        </div>
+        <i class='bx bxs-cart-add cart two' ></i>
+      </div>
+      <div class="box">
+        <div class="right-side">
+          <div class="box-topic">Total Profit</div>
+          <div class="number">#value</div>
+          <div class="indicator">
+            <i class='bx bx-up-arrow-alt'></i>
+            <span class="text">Up from yesterday</span>
+          </div>
+        </div>
+        <i class='bx bx-cart cart three' ></i>
+      </div>
+      <div class="box">
+        <div class="right-side">
+          <div class="box-topic">Total Return</div>
+          <div class="number">#value</div>
+          <div class="indicator">
+            <i class='bx bx-down-arrow-alt down'></i>
+            <span class="text">Down From Today</span>
+          </div>
+        </div>
+        <i class='bx bxs-cart-download cart four' ></i>
+      </div>
+    </div>
+<header class="header" role="banner">
+    <h1 class="logo">
+      <a href="#"> CUSTOMER DASHBOARD<span></span></a>
+    </h1>
+      <!--div class="nav-wrap"-->
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="default.asp">Home Page</a></li>
+          <li><a href="news.asp">Account Details</a></li>
+          <li><a href="contact.asp">Appointments</a></li>
+          <li><a href="about.asp">Register complaints</a></li>
+          <li><a href="about.asp">Purchase ideas</a></li>
+      
+        </ul>
+      </nav>
+    </div>
+  </header>

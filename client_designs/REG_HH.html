@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div class="container">
+  <h1>User Registration</h1>
+  
+</div>
+<style>
+    body {
+      background-image: url('pictures/WEALTH.jpeg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      
+    }
+    </style>
+</head>
+<form name="registration" class="registartion-form" >
+    <table>
+        <tr>
+            <td><label for="fname"> <b>First Name:</b>></label></td>
+            <td><input type="text" name="fname" id="fname" placeholder="Your first name"></td>
+        </tr>
+        <tr>
+            <td><label for="mname"> <b>Middle Name:</b></label></td>
+            <td><input type="text" name="mname" id="mname" placeholder="Your middle name"></td>
+        </tr>
+         <tr>
+            <td><label for="lname"> <b>Last Name:</b></label></td>
+            <td><input type="text" name="lname" id="lname" placeholder="Your last name"></td>
+        </tr>
+	    <tr>
+            <td><label for="gender"><b>Gender:</b></label></td>
+            <td>Male: <input type="radio" name="gender" value="male">
+             Female: <input type="radio" name="gender" value="female">
+            Other: <input type="radio" name="gender" value="other"></td>
+        </tr>
+	    <tr>
+            <td><label for="dob"> <b>Date of Birth:</b>b></label></td>
+            <td><input type="text" name="dob" id="dob" placeholder="DOB"></td>
+        </tr>
+        <tr>
+            <td><label for="email"><b>Email:</b></label></td>
+            <td><input type="text" name="email" id="email" placeholder="Your email"></td>
+        </tr>
+ 	    <tr>
+            <td><label for="phoneNumber"><B>Phone Number:</B></label></td>
+            <td><input type="text" name="phoneNumber" id="phoneNumber" placeholder="Your Phone number"></td>
+        </tr>      
+        <tr>
+            <td><label for="add"><b> Address:</b></label></td>
+            <td><input type="text" name="add" id="add" placeholder="Your Address"></td>
+        </tr>
+        <tr>
+            <td><label for="country"><b>Country:</b></label></td>
+            <td><input type="text" name="country" id="country" placeholder="Your Country"></td>
+        </tr>    
+	    <tr>
+            <td><label for="password"><B>Password:</b></label></td>
+            <td><input type="password" name="password" id="password" placeholder="Your Password"></td>
+        </tr> 
+        <tr><td>
+        <label for="security question"><B>Security Question:</B>></label>
+
+	        <select name="seq" id="seq">
+ 	 	        <option value="Car">Which is your favourite car?</option>
+ 	 	        <option value="Hero">Who is your favourite hero?</option>
+  		        <option value="Birth Place">Where is your Birth Place?</option>
+  		        <option value="Mother name">What is your Mother's Middle name?</option>
+	        </select>
+            </td>
+        </tr>    
+        <tr>
+            <td><label for="sqa"><B>Answer:</B></label></td>
+            <td><textarea name="sqa" id="sqa" placeholder="Type your answer"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+        </tr>
+    </table>
+    <p><B>Already Registred? Click here to </B><a href="signin.php">sign in</a><p>
+    
+  </form>
+  
+</body>
